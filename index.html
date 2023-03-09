@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <article class="container">
+
+        <table>
+            <tr>
+                <td colspan="4">
+                    <h1>CALCULATOR APP</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text" class="output-box" id="input-num" name="input-box" value="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td><button id="parenthesis-left" onclick="alert('Chưa biết code cái này -.-')">(</button></td>
+                <td><button id="parenthesis-right" onclick="alert('Chưa biết code cái này -.-')">)</button></td>
+                <td><button id="modulus" onclick="operator('mod')">%</button></td>
+                <td><button id="AC" type="reset" onclick="reset()">AC</button></td>
+            </tr>
+            <tr>
+                <td><button id="num7" value="7" onclick="getNum('num7')">7</button></td>
+                <td><button id="num8" value="8" onclick="getNum('num8')">8</button></td>
+                <td><button id="num9" value="9" onclick="getNum('num9')">9</button></td>
+                <td><button id="divide" onclick="operator('div')">÷</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4" value="4" onclick="getNum('num4')">4</button></td>
+                <td><button id="num5" value="5" onclick="getNum('num5')">5</button></td>
+                <td><button id="num6" value="6" onclick="getNum('num6')">6</button></td>
+                <td><button id="multiple" onclick="operator('mul')">x</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1" value="1" onclick="getNum('num1')">1</button></td>
+                <td><button id="num2" value="2" onclick="getNum('num2')">2</button></td>
+                <td><button id="num3" value="3" onclick="getNum('num3')">3</button></td>
+                <td><button id="minus" onclick="operator('sub')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num0">0</button></td>
+                <td><button id="float-point" onclick="operator('dot')">.</button></td>
+                <td><button id="equal-sign" onclick="result()">=</button></td>
+                <td><button id="plus-sign" onclick="operator('add')">+</button></td>
+            </tr>
+        </table>
+    </article>
+</body>
+
+</html>
